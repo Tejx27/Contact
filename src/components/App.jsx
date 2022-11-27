@@ -1,39 +1,29 @@
 import React from "react";
 import Card from "./Card.jsx";
+import contacts from "../contacts";
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
       <Card
-        name="Tejas Nikam"
-        img="https://picsum.photos/200/300"
-        tel="9595729100"
-        gmail="contactTejas@gmail.com"
+        name={contacts[0].name}
+        img={contacts[0].imgURL}
+        tel={contacts[0].phone}
+        gmail={contacts[0].email}
       />
       <Card
-        name="Suraj More"
-        img="https://picsum.photos/200/300"
-        tel="7666001508"
-        gmail="contactSuraj@gmail.com"
+        name={contacts[1].name}
+        img={contacts[1].imgURL}
+        tel={contacts[1].phone}
+        gmail={contacts[1].email}
       />
       <Card
-        name="Suraj Mahind"
-        img="https://picsum.photos/200/300"
-        tel="9307999968"
-        gmail="contactSurajpm@gmail.com"
+        name={contacts[2].name}
+        img={contacts[2].imgURL}
+        tel={contacts[2].phone}
+        gmail={contacts[2].email}
       />
-      <Card
-        name="Anil Shirtode"
-        img="https://picsum.photos/200/300"
-        tel="8265064647"
-        gmail="contactAnil@gmail.com"
-      />
-      <Card
-        name="Kishor Maske"
-        img="https://picsum.photos/200/300"
-        tel="8805138667"
-        gmail="contactKishore@gmail.com"
-      />
+      
     </div>
   );
 }
